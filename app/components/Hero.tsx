@@ -18,7 +18,7 @@ async function getData(media: string, type: string, trending: string) {
 export default async function Hero({ media, type, trending }: Props) {
     const film = await getData(media, type, trending);
     const imgPath = "https://image.tmdb.org/t/p/original";
-    let index = 1;
+    let index = 0;
 
     return (
          <section className='hidden md:block relative h-[40vw] w-[100%]'>
